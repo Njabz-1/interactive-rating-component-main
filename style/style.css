@@ -10,7 +10,7 @@
     /* ## Colors */
     --Orange: hsl(25, 97%, 53%);
     --Light-Grey: hsl(217, 12%, 63%);
-    --Medium-Grey: hsl(216, 12%, 54%);
+    --Medium-Grey: hsl(216, 13%, 25%);
     --Dark-Blue: hsl(213, 19%, 18%);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
     --White: hsl(0, 0%, 100%);
@@ -25,13 +25,15 @@ body {
     /* margin: 1.25rem; */
 }
 
-.no-padding {
-    padding:0;
+@media(min-width:500px) {
+    .card {
+        background-color: var(--Dark-Blue);
+        width: 400px;
+        border-radius: 1.5rem;
+        padding: 2rem;
+    }
 }
 
-.card {
-    background-color: var(--Dark-Blue);
-}
 
 h1 {
     color: var(--White);
@@ -43,5 +45,20 @@ p {
 
 .star {
     background-color: var(--Medium-Grey);
-    border-radius: 20px;
+    border-radius: 50%;
 }
+
+.number-box {
+    border-radius: 50%;
+    background-color: var(--Medium-Grey);
+    color: var(--Light-Grey);
+    text-align: center;
+  }
+
+  button {
+    background-color: var(--Orange);
+    border-radius: 2em;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
