@@ -40,3 +40,8 @@ h1 {
 p {
     color: var(--Light-Grey);
 }
+
+.star {
+    background-color: var(--Medium-Grey);
+    border-radius: 20px;
+}
