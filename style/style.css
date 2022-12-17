@@ -53,11 +53,25 @@ p {
     color: var(--Light-Grey);
     text-align: center;
   }
-
+  /* On hover State for numbers */
+.number-box:hover{
+    color: var(--White);
+    background-color: var(--Orange);
+    cursor: pointer;
+}
+.number-box:active{
+    background-color: var(--Light-Grey);
+}
   button {
     background-color: var(--Orange);
+    color: var(--White);
     border-radius: 2em;
     padding: 1em;
     text-transform: uppercase;
     letter-spacing: 2px;
+  }
+
+  button:active {
+    background-color: var(--White);
+    color: var(--Orange);
   }
