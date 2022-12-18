@@ -35,7 +35,7 @@ body {
 }
 
 
-h2 {
+h3 {
     color: var(--White);
 }
 
@@ -62,7 +62,7 @@ p {
 .number-box:active{
     background-color: var(--Light-Grey);
 }
-  button {
+button {
     background-color: var(--Orange);
     color: var(--White);
     border-radius: 2em;
@@ -74,4 +74,12 @@ p {
   button:active {
     background-color: var(--White);
     color: var(--Orange);
+  }
+
+  .rating {
+    background-color: var(--Medium-Grey);
+    border-radius: 2em;
+    padding: 0.4em 1.7em;
+    color: var(--Orange);
+    text-align: center;
   }
