@@ -34,6 +34,14 @@ body {
     }
 }
 
+@media(max-width:475px) {
+    .card{
+        background-color: var(--Dark-Blue);
+        border-radius: 1.5rem;
+        padding: 2rem;
+        width: 320px;
+    }
+}
 
 h3 {
     color: var(--White);
