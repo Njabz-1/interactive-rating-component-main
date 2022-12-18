@@ -59,8 +59,9 @@ p {
     background-color: var(--Orange);
     cursor: pointer;
 }
-.number-box:active{
+.number-box.clicked{
     background-color: var(--Light-Grey);
+    color: var(--White);
 }
 button {
     background-color: var(--Orange);

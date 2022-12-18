@@ -12,7 +12,7 @@
 </head>
 
 <body class="d-flex align-items-center justify-content-center">
-  <div class="card mt-5" >
+  <div class="card mt-5" id="hideMe">
     <div class="row">
       <div class="">
         <img src="images\icon-star.svg" alt="star" class="img-fluid star p-3">
@@ -29,19 +29,19 @@
           All feedback is appreciated to help us improve our offering!</p>
       </div>
     </div>
-    <div class="row  mt-1 mb-4">
-      <div class="col-2 number-box rounded-circle p-3 me-1">1</div>
-      <div class="col-2 number-box rounded-circle p-3 mx-2">2</div>
-      <div class="col-2 number-box rounded-circle p-3 mx-2">3</div>
-      <div class="col-2 number-box rounded-circle p-3 mx-2">4</div>
-      <div class="col-2 number-box rounded-circle p-3 ms-1">5</div>
+    <div class="row ms-1 mt-1 mb-4">
+      <div id="1" class="col-2 number-box rounded-circle p-3 me-1" onclick="setRating(this.id)">1</div>
+      <div id="2" class="col-2 number-box rounded-circle p-3 mx-2" onclick="setRating(this.id)">2</div>
+      <div id="3" class="col-2 number-box rounded-circle p-3 mx-2" onclick="setRating(this.id)">3</div>
+      <div id="4" class="col-2 number-box rounded-circle p-3 mx-2" onclick="setRating(this.id)">4</div>
+      <div id="5" class="col-2 number-box rounded-circle p-3 ms-1" onclick="setRating(this.id)">5</div>
     </div>
-    <button>Submit</button>
+    <button id="submit">Submit</button>
   </div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <div class="card mt-5 ">
+  <div class="card mt-5" style="display: none;" id="revealMe">
     <div class="row justify-content-center mb-5">
       <img src="images/illustration-thank-you.svg" alt="Moblie with feedback" class="img-fluid w-50">
     </div>
@@ -56,9 +56,10 @@
     <div class="row mx-auto text-center">
       <p> We appreciate you taking the time to give a rating. If you ever need more support,
         don’t hesitate to get in touch!</p>
-
     </div>
   </div>
+  <!-- Thank you state end -->
+  <script src="/js/base.js"></script>
 </body>
 
 </html>
