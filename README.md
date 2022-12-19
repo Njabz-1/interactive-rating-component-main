@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-[How did we do Solution](images\Screenshot.JPG?raw=true)
+![How did we do Solution](images/Screenshot.JPG?raw=true)
 
 
 ### Links
